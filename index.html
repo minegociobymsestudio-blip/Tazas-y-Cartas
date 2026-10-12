@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre tazas y cartas : cafetería, gastronomía y experiencias de tarot.">
+  <title> Entre tazas y cartas| Café y Tarot</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="container navbar">
+      <a href="#inicio" class="logo"> Tazas <span>&</span> Cartas ☾</a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#tarot">Tarot</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content reveal">
+        <span class="eyebrow">Un refugio para el alma</span>
+        <h1>Sabores que abrazan.<br>
+          <em>Misterios que inspiran.</em>
+        </h1>
+        <p>
+          Un rincón donde el aroma del café se encuentra con
+          la magia del tarot. Vení a disfrutar de una experiencia única.
+        </p>
+        <div class="buttons">
+          <a href="#menu" class="btn btn-primary">VER EL MENÚ</a>
+          <a href="#tarot" class="btn">DESCUBRIR EL TAROT</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Delicias para disfrutar</span>
+          <h2>Nuestro menú</h2>
+          <p>Sabores preparados para acompañar tus momentos especiales.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+              alt="Café recién preparado" loading="lazy">
+            <div class="card-content">
+              <h3>Café de la Luna</h3>
+              <p>Cafés, cappuccinos y lattes para disfrutar sin apuro.</p>
+              <span class="price">Consultar precios</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80"
+              alt="Pastelería artesanal" loading="lazy">
+            <div class="card-content">
+              <h3>Dulces Encantos</h3>
+              <p>Tortas, brownies y delicias de pastelería.</p>
+              <span class="price">Consultar precios</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=800&q=80"
+              alt="Comida para compartir" loading="lazy">
+            <div class="card-content">
+              <h3>Ritual de Sabores</h3>
+              <p>Opciones saladas y meriendas para compartir.</p>
+              <span class="price">Consultar precios</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tarot-section" id="tarot">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Conectá con tu intuición</span>
+          <h2>El universo del tarot</h2>
+          <p>Un espacio para reflexionar, conversar y regalarte tiempo.</p>
+        </div>
+
+        <div class="grid">
+          <article class="tarot-card reveal">
+            <span class="symbol">☾</span>
+            <h3>Lectura personal</h3>
+            <p>Una sesión individual para explorar tus preguntas.</p>
+            <a href="#contacto" class="btn">CONSULTAR</a>
+          </article>
+
+          <article class="tarot-card reveal">
+            <span class="symbol">✧</span>
+            <h3>Tarot del amor</h3>
+            <p>Un encuentro de reflexión sobre vínculos y emociones.</p>
+            <a href="#contacto" class="btn">CONSULTAR</a>
+          </article>
+
+          <article class="tarot-card reveal">
+            <span class="symbol">☼</span>
+            <h3>Merienda mística</h3>
+            <p>Una merienda especial acompañada de una lectura.</p>
+            <a href="#contacto" class="btn">CONSULTAR</a>
+          </article>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section class="section about-section" id="nosotros">
+      <div class="container about-grid">
+        <img class="about-image reveal"
+          src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85"
+          alt="Interior acogedor de una cafetería" loading="lazy">
+
+        <div class="about-content reveal">
+          <span class="eyebrow">Nuestra historia</span>
+          <h2>Un lugar para detener el tiempo</h2>
+          <p>
+            Entre Tazas & Cartas nació de la idea de unir dos placeres:
+            disfrutar algo rico y encontrar un momento para uno mismo.
+          </p>
+          <p>
+            Creamos un ambiente cálido donde los aromas, los sabores
+            y el tarot se encuentran para ofrecer una experiencia diferente.
+          </p>
+          <a href="#contacto" class="btn btn-primary">VENÍ A CONOCERNOS</a>
+        </div>
+      </div>
+    </section>
+
+    
+<section class="section galeria" id="galeria">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Nuestro universo visual</span>
+      <h2>Galería mágica</h2>
+      <p>Descubrí cada rincón de Tazas & Cartas.</p>
+    </div>
+
+    <div class="galeria-carousel" id="galeriaCarousel">
+      <button class="carousel-btn prev" type="button"
+        aria-label="Imagen anterior">❮</button>
+
+      <div class="carousel-viewport">
+        <div class="carousel-track">
+
+          <div class="carousel-slide">
+            <img src="xd.jpeg"
+              alt="Interior del local" loading="lazy">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="tarot.jpeg"
+              alt="Comida y bebidas" loading="lazy">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="hol.png"
+              alt="Cartas de tarot" loading="lazy">
+          </div>
+
+          <div class="carousel-slide">
+            <video controls preload="metadata">
+              <source src="1011 (3).mp4" type="video/mp4">
+              Tu navegador no puede reproducir este video.
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="carousel-btn next" type="button"
+        aria-label="Imagen siguiente">❯</button>
+
+      <div class="carousel-counter">
+        <span id="galeriaActual">1</span> /
+        <span id="galeriaTotal">4</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="section reviews-section" id="opiniones">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Palabras bonitas</span>
+          <h2>Opiniones y experiencias</h2>
+          <p>Un espacio para conocer las experiencias de nuestros visitantes.</p>
+        </div>
+
+        <div class="grid">
+          <article class="review-card reveal">
+            <span class="stars">★★★★★</span>
+            <p>“El café y el ambiente son ideales para desconectar de la rutina.”</p>
+            <h3>Experiencia de ejemplo</h3>
+          </article>
+
+          <article class="review-card reveal">
+            <span class="stars">★★★★★</span>
+            <p>“Combinar una merienda con una lectura de tarot es una idea original.”</p>
+            <h3>Andrea Ugarte</h3>
+          </article>
+
+          <article class="review-card reveal">
+            <span class="stars">★★★★★</span>
+            <p>“Un espacio cálido, lleno de detalles y con una propuesta diferente.”</p>
+            <h3>Experiencia de ejemplo</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-content reveal">
+        <span class="eyebrow">Tu próximo momento especial</span>
+        <h2>¿Nos encontramos?</h2>
+        <p>Consultá el menú, reservá tu lectura o escribinos.</p>
+        <div class="buttons">
+          <a href="#" id="whatsappLink" class="btn btn-primary"
+            target="_blank" rel="noopener noreferrer">
+            HABLAR POR WHATSAPP
+          </a>
+          <a href="#inicio" class="btn">VOLVER AL INICIO ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="logo">Tazas & Cartas ☾</a>
+    <p>Café, tarot y momentos para el alma.</p>
+    <p>© <span id="year"></span> Tazas & Cartas</p>
+  </footer>
+
+</body>
+</html>
