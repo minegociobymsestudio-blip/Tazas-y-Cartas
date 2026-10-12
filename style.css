@@ -1,0 +1,545 @@
+:root {
+  --bg: #362633;
+  --surface: #412a3c;
+  --cream: #f3e8d8;
+  --gold: #abb15d;
+  --muted: #b9aaa0;
+  --wine: #441b42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(35, 26, 36, 0.97);
+  border-bottom: 1px solid #ffffff15;
+}
+
+.navbar {
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--gold);
+  font-size: 27px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--cream);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  font-size: 13px;
+}
+
+.nav-links a {
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.menu-toggle {
+  display: none;
+  color: var(--cream);
+  background: transparent;
+  border: 1px solid #ffffff35;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, #171311f5, #17131170),
+    url("tarot.jpeg")
+    center/cover;
+}
+
+.hero-content {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  max-width: 800px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(48px, 8vw, 84px);
+  margin: 25px 0;
+}
+
+h1 em {
+  color: var(--gold);
+}
+
+.hero p {
+  max-width: 510px;
+  color: #e0d5cc;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid var(--gold);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section-heading h2,
+.about-content h2,
+.contact-content h2 {
+  font-size: clamp(38px, 5vw, 56px);
+  margin: 15px 0;
+}
+
+.section-heading p,
+.about-content p {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #ffffff12;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card h3,
+.tarot-card h3 {
+  font-size: 29px;
+  margin-bottom: 12px;
+}
+
+.card p,
+.tarot-card p,
+.review-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.price {
+  display: block;
+  margin-top: 18px;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.tarot-section {
+  background: radial-gradient(ellipse at center, #38252a, var(--bg) 75%);
+}
+
+.tarot-card {
+  text-align: center;
+  background: #211b19a8;
+  border: 1px solid #c7a46a45;
+  padding: 35px 24px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.tarot-card:hover {
+  transform: translateY(-5px);
+  background: #30221f;
+}
+
+.symbol {
+  display: block;
+  color: var(--gold);
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.tarot-card .btn {
+  margin-top: 22px;
+}
+
+.notice {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  max-width: 720px;
+  margin: 30px auto 0;
+}
+
+.about-section,
+.reviews-section {
+  background: var(--surface);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+}
+
+.about-content .btn {
+  margin-top: 10px;
+}
+
+.review-card {
+  background: var(--bg);
+  border: 1px solid #ffffff15;
+  padding: 30px;
+}
+
+.stars {
+  color: var(--gold);
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.review-card p {
+  margin-bottom: 22px;
+}
+
+.review-card h3 {
+  font-size: 22px;
+}
+
+.contact-section {
+  text-align: center;
+  background:
+    linear-gradient(#171311e8, #171311ed),
+    url("https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=1500&q=80")
+    center/cover;
+}
+
+.contact-content p {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.contact-content .buttons {
+  justify-content: center;
+}
+
+.footer {
+  border-top: 1px solid #ffffff15;
+  padding: 30px 5%;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Animaciones activadas desde JavaScript */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    background: var(--bg);
+    border-bottom: 1px solid #ffffff20;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 590px;
+  }
+
+  .about-image {
+    height: 320px;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .buttons .btn {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* GALERÍA CON FLECHAS */
+.galeria {
+  background: #171311;
+}
+
+.galeria-carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border: 1px solid #c7a46a55;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 450px;
+  position: relative;
+}
+
+.carousel-slide img,
+.carousel-slide video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #211b19;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #c7a46a;
+  border-radius: 50%;
+  background: #171311dd;
+  color: #e2c18a;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.carousel-btn:hover {
+  background: #c7a46a;
+  color: #171311;
+}
+
+.carousel-btn.prev {
+  left: 15px;
+}
+
+.carousel-btn.next {
+  right: 15px;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #e2c18a;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    height: 280px;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+}
